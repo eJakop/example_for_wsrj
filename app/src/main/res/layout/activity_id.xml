@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:paddingTop="50dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                android:text="Авторизация"
+                android:textSize="30sp" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="20dp"
+            android:hint="Электронная почта"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/font"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:fontFamily="@font/font"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginVertical="50dp"
+            android:fontFamily="@font/font"
+            android:onClick="onClickLog"
+            android:text="Вход"
+            android:textColor="@color/text"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:fontFamily="@font/font"
+            android:onClick="onClickReg"
+            android:text="Регистрация"
+            android:textColor="@color/text"
+            android:textSize="30sp" />
+    </LinearLayout>
+</RelativeLayout>
